@@ -7,18 +7,24 @@ import AssessmentList from './Components/AssessmentList';
 
 function App() {
   const [gradeInput, setGradeInput] = useState("");
+  const [weightInput, setWeightInput] = useState("");
+  const [assessmentNumber, setAssessmentNumber] = useState(10);
   const [assessments, setAssessments] = useState([]);
 
   return (
     <div className="App">
       <Title/>
-      <Form 
+      <Form
+        assessmentNumber={assessmentNumber}
+        setAssessmentNumber={setAssessmentNumber} 
         setAssessments={setAssessments} 
         assessments={assessments} 
         setGradeInput={setGradeInput} 
         gradeInput={gradeInput}
+        weightInput={weightInput}
+        setWeightInput={setWeightInput}
       />
-      <AssessmentList assessments={assessments}/>
+      <AssessmentList assessmentNumber={assessmentNumber} assessments={assessments}/>
     </div>
   );
 }

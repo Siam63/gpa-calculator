@@ -1,16 +1,16 @@
 import React from 'react';
 import Assessment from './Assessment';
 
-function AssessmentList( {assessments} ) {
+function AssessmentList({ assessments }) {
     return (
         <div className="assessments">
             <ul className="assessment-list">
                 {assessments.map((assessment => 
-                    <Assessment gradeInput={assessment.gradeInput}/>    
+                    <Assessment count={assessment.count} gradeInput={assessment.gradeInput} weightInput={assessment.weightInput}/>    
                 ))}
             </ul>
         </div>
     )
 }
 
-export default AssessmentList
+export default AssessmentList;
