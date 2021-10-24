@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Assessment from './Components/Assessment';
+import Title from './Components/Title';
+import Form from './Components/Form';
+import AssessmentList from './Components/AssessmentList';
 
 function App() {
+  const [gradeInput, setGradeInput] = useState("");
+  const [assessments, setAssessments] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title/>
+      <Form 
+        setAssessments={setAssessments} 
+        assessments={assessments} 
+        setGradeInput={setGradeInput} 
+        gradeInput={gradeInput}
+      />
+      <AssessmentList assessments={assessments}/>
     </div>
   );
 }

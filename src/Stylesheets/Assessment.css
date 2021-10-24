@@ -1,0 +1,29 @@
+.assessment-list-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.assessment-input{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.assessment-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(184, 184, 184);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.assessment-output{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
