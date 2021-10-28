@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Stylesheets/Assessment.css';
 
 function Assessment({ gradeInput, weightInput, count}) {
-    const [totalWeight, setTotalWeight] = useState(0);
-
-    const addToWeight = () => {
-        setTotalWeight(totalWeight => totalWeight + weightInput);
-    }
-
     return (
         <div className="assessment">
             <div className="assessment-container">

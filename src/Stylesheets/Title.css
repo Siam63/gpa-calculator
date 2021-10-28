@@ -1,0 +1,13 @@
+.title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.title-main{
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(5, 44, 142);
+    color: white;
+}

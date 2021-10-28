@@ -1,7 +1,11 @@
+.assessment{
+    display: flex;
+    justify-content: center;
+}
+
 .assessment-list-container{
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    justify-content: center;
 }
 
 .assessment-input{
@@ -16,7 +20,7 @@
     display: flex;
     justify-content: center;
     margin: 10px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(227, 227, 227);
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;

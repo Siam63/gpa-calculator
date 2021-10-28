@@ -1,13 +1,62 @@
 .form-container{
-    display: flex;
-    flex-direction: row;
     text-align: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.form-title{
+    margin-top: -25px;
+}
+
+.form-name{
+    display: flex;
+    color: rgb(0, 8, 255);
 }
 
 .form-input{
     display: flex;
     padding: 5px;
     margin: 5px;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-left: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.form-count-title{
+    display: flex;
+    margin: 10px;
+    padding: 0px;
+}
+
+.form-input-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-button{
+    display: flex;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 2px 2px rgb(184, 184, 184);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form-button:hover{
+    cursor: pointer;
+    background-color: rgb(213, 213, 213);
+}
+
+.form-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }

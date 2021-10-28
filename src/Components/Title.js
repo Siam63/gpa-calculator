@@ -1,10 +1,11 @@
 import React from 'react';
+import '../Stylesheets/Title.css';
 
 function Title() {
     return (
         <div className="title">
-            <div>
-                <h1>Ryerson GPA Calculator</h1>
+            <div className="title-container">
+                <h1 className="title-main">Ryerson GPA Calculator</h1>
             </div>
         </div>
     )
