@@ -102,7 +102,7 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
                         <button className="form-button" onClick={resetFields}>Reset Fields</button>
                         <button className="form-button" onClick={calculateFinalGrade}>Calculate</button>
                     </div>
-                    <h2>Grade Received: {totalMark}%</h2>
+                    <h2>Grade Received: {Math.round(totalMark).toFixed(2)}%</h2>
                     <h2>Current mark so far: {Math.round((totalMark / totalWeight) * 100).toFixed(2)}%</h2>
                     <h2>Total Weight of all Assessments: {Math.round(totalWeight).toFixed(2)}%</h2>
                     <h2>Grade: {letterGrade}</h2>
