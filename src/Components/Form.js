@@ -85,7 +85,6 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
                     <div className="form-title">
                         <h2>Please enter your mark and the weight of the assessment below.</h2>
                         <h2>Once you have inputted the values, press the "Add Assessment" button and the results will be shown below.</h2>
-                        <h2>Please round your marks when entering! For example, a 79.45 = 80, 79.4 = 79</h2>
                     </div>
                     <div className="form-input-container">
                         <div>
