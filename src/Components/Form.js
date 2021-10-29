@@ -91,10 +91,10 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
                             <h1>{count}</h1>
                         </div>
                         <div className="grade-input">
-                            <input type="number" value={gradeInput} onChange={gradeInputHandler} class="form-input" placeholder="0%"></input>
+                            <input type="number" value={gradeInput} onChange={gradeInputHandler} class="form-input" placeholder="Grade"></input>
                         </div>
                         <div>
-                            <input type="number" value={weightInput} onChange={weightInputHandler} class="form-input" placeholder="0%"></input>
+                            <input type="number" value={weightInput} onChange={weightInputHandler} class="form-input" placeholder="Weight"></input>
                         </div>
                     </div>
                     <div className="form-btn-container">
