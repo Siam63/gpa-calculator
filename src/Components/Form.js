@@ -12,10 +12,10 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
         if(parseFloat(totalMark) >= 89.45){
             setLetterGrade("A+");
             setGpa(4.33);
-        }else if(parseFloat(totalMark) >= 83.45 && parseFloat(totalMark) <= 89.44){
+        }else if(parseFloat(totalMark) >= 84.45 && parseFloat(totalMark) <= 89.44){
             setLetterGrade("A");
             setGpa(4.00);
-        }else if(parseFloat(totalMark) >= 79.45 && parseFloat(totalMark) <= 83.44){
+        }else if(parseFloat(totalMark) >= 79.45 && parseFloat(totalMark) <= 84.44){
             setLetterGrade("A-");
             setGpa(3.67);
         }else if(parseFloat(totalMark) >= 76.45 && parseFloat(totalMark) <= 79.44){
@@ -73,7 +73,7 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
         
         setCount(count => count + 1);
         setTotalWeight(totalWeight => totalWeight + parseFloat(weightInput));
-        setTotalMark(totalMark => parseFloat(totalMark + ((parseFloat(gradeInput) / 100) * parseFloat(weightInput))).toFixed(2));
+        setTotalMark(totalMark => totalMark + ((parseFloat(gradeInput) / 100) * parseFloat(weightInput)));
     }
 
     return (
@@ -85,6 +85,7 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
                     <div className="form-title">
                         <h2>Please enter your mark and the weight of the assessment below.</h2>
                         <h2>Once you have inputted the values, press the "Add Assessment" button and the results will be shown below.</h2>
+                        <h2>Please round your marks when entering! For example, a 79.45 = 80, 79.4 = 79</h2>
                     </div>
                     <div className="form-input-container">
                         <div>
@@ -102,9 +103,9 @@ function Form({ weightInput, setWeightInput, gradeInput, assessments, setAssessm
                         <button className="form-button" onClick={resetFields}>Reset Fields</button>
                         <button className="form-button" onClick={calculateFinalGrade}>Calculate</button>
                     </div>
-                    <h2>Grade Received: {parseFloat(totalMark).toFixed(2)}%</h2>
-                    <h2>Current mark so far: {parseFloat((totalMark / totalWeight) * 100).toFixed(2)}%</h2>
-                    <h2>Total Weight of all Assessments: {parseFloat(totalWeight).toFixed(2)}%</h2>
+                    <h2>Grade Received: {parseFloat(totalMark)}%</h2>
+                    <h2>Current mark so far: {parseFloat((totalMark / totalWeight) * 100)}%</h2>
+                    <h2>Total Weight of all Assessments: {parseFloat(totalWeight)}%</h2>
                     <h2>Grade: {letterGrade}</h2>
                     <h2>GPA: {gpa}</h2>
                     <h4 className="form-name">Developed by: MD Faiazur Rahman - 2021</h4>
